@@ -1,0 +1,11 @@
+
+<h2>My Celebrities</h2>
+
+<ul class="celebrities">
+  <li *ngFor="let celebrity of celebrities">
+    <a routerLink="/detail/{{celebrity.id}}">
+        <span class="badge">{{celebrity.id}}</span> {{celebrity.name}}
+      </a>
+    </li>
+  </ul>
+
